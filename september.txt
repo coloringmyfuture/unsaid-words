@@ -16,3 +16,23 @@ public class Main {
         System.out.println("paiza");
     }
 }
+
+
+// paiza-D STEP：2
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("paiza learning");
+	}
+}
+
+
+// 解答例
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("paiza learning");
+    }
+}
