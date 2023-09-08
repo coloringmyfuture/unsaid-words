@@ -1,4 +1,5 @@
-// paiza Dランクレベルアップメニュー STEP：1
+// paiza Dランクレベルアップメニュー 2つの数値を出力
+// STEP：1
 
 import java.util.*;
 public class Main {
@@ -8,17 +9,7 @@ public class Main {
 }
 
 
-// 解答例
-
-public class Main {
-
-    public static void main(String[] args) {
-        System.out.println("paiza");
-    }
-}
-
-
-// paiza-D STEP：2
+// STEP：2
 
 import java.util.*;
 public class Main {
@@ -28,11 +19,43 @@ public class Main {
 }
 
 
+// STEP：3
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(813);
+	}
+}
+
+
+// STEP：4
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(8);
+		System.out.println(1);
+		System.out.println(3);
+	}
+}
+
+
+// STEP：Final
+
+import.java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("1 1");
+	}
+}
+
+
 // 解答例
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("paiza learning");
+        System.out.println(1 + " " + 1);
     }
 }
