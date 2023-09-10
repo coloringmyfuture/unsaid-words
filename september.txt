@@ -59,3 +59,41 @@ public class Main {
         System.out.println(1 + " " + 1);
     }
 }
+
+
+// paiza Dランクレベルアップメニュー　代入演算１
+// STEP：1
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(1231 + 5178);
+	}
+}
+
+
+// STEP：2
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		int A = 437326;
+		int B = 9085;
+		System.out.println(A/B + " " + A%B);
+	}
+}
+
+
+// 解答例
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String... args) {
+        var a = 437_326;
+        var b = 9_085;
+
+        System.out.println((a / b) + " " + (a % b));
+    }
+}
