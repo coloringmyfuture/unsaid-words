@@ -1,0 +1,122 @@
+// java p.95 練習 2-1
+
+public class Main {
+	public static void main (String[] args) {
+		int x = 5;
+		int y = 10;
+		String ans = "x+yは" + ( x + y );
+		System.out.println(ans);
+	}
+}
+
+
+// java p.96 練習 2-3
+
+public class Main {
+	public static void main (String[] args) {
+		System.out.println("ようこそ占いの館へ");
+		System.out.println("あなたの名前を入力してください");
+			String name = new java.util.Scanner (System.in).nextLine();
+		System.out.println("あなたの年齢を入力してください");
+			String ageString = new java.util.Scanner (System.in).nextLine();
+		int age = Integer.parseInt(ageString);
+		int fortune = new java.util.Random().nextInt(4);
+		fortune++;
+		System.out.println("占いの結果が出ました！");
+		System.out.println(age + "歳の" + name + "さん、あなたの運気番号は" + fortune + "です");
+		System.out.println("1:大吉 2:中吉 3:吉 4:凶");
+		
+	}
+}
+
+
+// java p.135 練習 3-1
+
+weight == 60
+(age1 + age2)*2 > 60
+age % 2 == 1
+name.equals ("湊")
+
+
+// java p.135 練習 3-3
+
+public class Main {
+	public static void main (String[] args) {
+		int isHungry = 0;
+		String food = "ハンバーガー";
+		System.out.println("こんにちは");
+		if (isHungry == 0) {
+			System.out.println("お腹がいっぱいです");
+		} else {
+			System.out.println("はらぺこです");
+			System.out.println(food + "をいただきます");
+			System.out.println("ごちそうさまでした");
+		}
+	}
+}
+
+
+// 3-3　解答
+
+public class Main {
+	public static void main (String[] args) {
+		int isHungry = 1;
+		String food = "おにぎり";
+		System.out.println("こんにちは");
+		if (isHungry == 0) {
+			System.out.println("お腹がいっぱいです");
+		} else {
+			System.out.println("はらぺこです");
+		}
+		if (isHungry == 1) {
+			System.out.println(food + "をいただきます");
+		}
+		System.out.println("ごちそうさまでした");
+		
+	}
+}
+
+
+// java p.136 練習 3-5
+
+public class Main {
+	public static void main (String[] args){
+		System.out.print("[メニュー] 1:検索 2:登録 3:削除 4:変更>");
+		int selected = new java.util.Scanner(System.in).nextInt();
+		switch (selected) {
+			case 1:
+				System.out.println("検索します");
+				break;
+			case 2:
+				System.out.println("登録します");
+				break;
+			case 3:
+				System.out.println("削除します");
+				break;
+			case 4:
+				System.out.println("変更します");
+				break;
+		}
+	}
+}
+
+
+// java p.137 練習 3-6
+
+public class Main {
+	public static void main (String[] args){
+		System.out.println("【数あてゲーム】");
+		int ans = new java.util.Random().nextInt(10);
+		for (int i = 0; i < 5; i++) {
+			System.out.println("0〜9の数字を入力してください");
+			int num = new java.util.Scanner(System.in).nextInt();
+			if (num == ans) {
+				System.out.println("アタリ！");
+				break;
+			} else {
+				System.out.println("違います");
+			}
+		}
+		System.out.println("ゲームを終了します");
+	}
+}
