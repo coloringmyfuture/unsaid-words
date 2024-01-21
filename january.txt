@@ -120,3 +120,30 @@ public class Main {
 		System.out.println("ゲームを終了します");
 	}
 }
+
+
+// paiza D　代入演算１　STEP: 3 累乗
+
+public class Main {
+	public static void main (String[] args){
+		int A = 202;
+		int B = 134;
+		int C = 107;
+		System.out.println(((A + B) * C) * ((A + B) * C));
+	}
+}
+
+
+// paiza D　代入演算１　FINAL
+
+public class Main {
+	public static void main(String[] args){
+		int N = 0;
+		N = N + 3286;
+		N = N * 4736;
+		N = N % 12312;
+		System.out.println(N);
+	}
+}
+
+
