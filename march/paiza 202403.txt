@@ -1,0 +1,63 @@
+// ランダムアクセス
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        
+        int[] numbers = new int[n];
+        System.out.println(numbers[(m-1)]);      
+    }
+}
+
+
+// ランダムアクセス　解答例
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+
+        List<Integer> a = new ArrayList<>();	// 空のリストを用意
+        for (int i = 0; i < n; i++) {
+            a.add(sc.nextInt());
+        }
+
+        System.out.println(a.get(m - 1));
+    }
+}
+
+
+// Fizz Buzz C相当
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        for (int i = 1; i < n+1; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("Fizz Buzz");
+            } else if (i % 3 == 0 ) {
+                System.out.println("Fizz"); 
+                } else if (i % 5 == 0) {
+                    System.out.println("Buzz");
+                } else {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
