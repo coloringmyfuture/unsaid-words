@@ -1,0 +1,419 @@
+// java p.176　練習4-1
+
+public class Main {
+	public static void main(String[] args) {
+		int[] points = new int[4];
+		double[] weights = new double[5];
+		boolean[] answers = new boolean[3];
+		String[] names = new String[3];
+	}
+}
+
+
+// 練習4-2
+
+public class Main {
+	public static void main(String[] args) {
+		int[] moneyList = {121902, 8302, 55100};
+		for (int i = 0; i < moneyList.length; i++) {
+			System.out.println(moneyList[i]);
+		}
+		for (int n : moneyList) {
+			System.out.println(n);
+		}
+	}
+}
+
+
+// 練習4-4
+
+public class Main {
+	public static void main(String[] args) {
+		int[] numbers = {3, 4, 9};
+		System.out.println("1行の数字を入力してください");
+		int input = new java.util.Scanner(System.in).nextInt();
+		if (input == numbers) {
+			System.out.println("アタリ！");
+		}
+	}
+}
+
+
+// 練習4-4　解答例
+
+public class Main {
+	public static void main(String[] args) {
+		int[] numbers = {3, 4, 9};
+		System.out.println("1行の数字を入力してください");
+		int input = new java.util.Scanner(System.in).nextIn();
+		for (int n : numbers) {
+			if (n == input) {
+				System.out.println("アタリ！");
+			}
+		}
+	}
+}
+
+
+// paiza D　スキルチェック過去問
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String t = sc.nextLine();
+        if (s.length <= 64 && t.length <= 64) {
+            System.out.println(s + "@" + t);
+        }
+    }
+}
+
+
+// paiza D　スキルチェック過去問　解答例
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s = sc.nextLine();
+        String t = sc.nextLine();
+        s += '@';
+        s += t;
+
+        System.out.println(s);
+    }
+}
+
+
+// paiza
+
+public class Main {
+	public static void main(String[] args){
+		int[] n = {813, 1, 2, 923874, 23648, 782356, 3256, 2342, 24324, 112};
+		for (int i = 0; i < n.length; i++) {
+			System.out.println(n[i]);
+		}
+	}
+}
+
+
+// paiza　解答例
+
+public class Main {
+
+    public static void main(String[] args) {
+        int[] n = new int[] {
+            813,
+            1,
+            2,
+            923874,
+            23648,
+            782356,
+            3256,
+            2342,
+            24324,
+            112,
+        };
+
+        for (int x : n) {
+            System.out.println(x);
+        }
+    }
+}
+
+
+// paiza D　ループ1
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        for (int n = 1; n <= 10; n++) {
+            System.out.println(n);
+        }
+    }
+}
+
+
+// paiza D　ループ1
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+    	Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for (int m = 1; m <= N; m++) {
+            System.out.println(m);
+        }
+    }
+}
+
+
+// paiza D278
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();
+        System.out.println(X / 80);
+    }
+}
+
+
+// java p.218　練習 5-1
+
+public class Main {
+
+	public static void introduceOneself() {
+		String name = "あやみ";
+		int age = 23;
+		double height = 158.2;
+		char zodiac = "辰";
+	}
+	
+	System.out.println(introduceOneself);
+}
+
+
+// 練習 5-1
+
+public class Main {
+	public static void main(String[] args) {
+		introduceOneself();
+	}
+
+	public static void introduceOneself() {
+		String name = "あやみ";
+		int age = 23;
+		double height = 158.2;
+		char zodiac = '辰';
+		System.out.println("私の名前は" + name + "です");
+		System.out.println(age + "歳です");
+		System.out.println("身長は" + height + "です");
+		System.out.println("干支は" + zodiac + "です");
+	}
+}
+
+
+// 練習 5-2　解答例
+
+public class Main {
+	public static void main(String[] args) {
+		String title = "お誘い";
+		String address = "uso800@xxxx.com";
+		String text = "今度、飲みに行きませんか";
+		email(title, address, text);
+	}
+
+	public static void email(String title, String address, String text) {
+		System.out.println(address + "に、以下のメールを送信しました");
+		System.out.println("件名：" + title);
+		System.out.println("本文：" + text);
+	}
+	
+}
+
+
+// 練習 5-4
+
+public class main {
+	public static void main(String[] args) {
+		calcTriangleArea(10.0, 5.0);
+		calcCircleArea(5.0);
+	}
+
+	public static double calcTriangleArea(double bottom, double height) {
+		System.out.println("三角形の底辺の長さが" + bottom + "cm、高さが" + height + "cmの場合、面積は" + bottom * height / 2 + "㎠");		
+	}
+
+	public static double calcCircleArea(double radius) {
+		System.out.println("円の半径が" + radius + "cmの場合、面積は" + radius * radius * 3.14 + "㎠");
+	}
+}
+
+
+// 練習 5-4 解答例
+
+public class Main {
+	public static void main(String[] args) {
+		double triangleArea = calcTriangleArea(10.0, 5.0);
+		System.out.println("三角形の面積：" + triangleArea + "平方cm");
+		double circleArea = calcCircleArea(5.0);
+		System.out.println("円の面積：" + circleArea + "平方cm");
+	}
+	public static double calcTriangleArea(double bottom, double height) {
+		double area = (bottom * height) / 2;
+		return area;
+	}
+	public static double calcCircleArea(double radius) {
+		double area = radius * radius * 3.14;
+		return area;
+	}
+
+}
+
+
+// paiza D
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        if (A * B <= C) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
+
+
+// paiza D
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(s);
+    }
+}
+
+
+// paiza D
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        // 自分の得意な言語で
+        // Let's チャレンジ！！
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        String b = sc.nextLine();
+        String c = sc.nextLine();
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+    }
+}
+
+
+// 解答例
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String... args) {
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 3; i++) {
+            String S = sc.nextLine();
+            System.out.println(S);
+        }
+    }
+}
+
+
+// paiza D
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            String s = sc.nextLine();
+            System.out.println(s);
+        }
+        
+    }
+}
+
+
+// 解答例
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = Integer.parseInt(sc.nextLine());
+        for (int i = 0; i < N; i++) {
+            System.out.println(sc.nextLine());
+        }
+    }
+}
+
+
+// paiza D
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            String s = sc.next();
+            System.out.println(s);            
+        }
+    }
+}
+
+
+// paiza D269
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String line = sc.nextLine();
+        System.out.print(line.charAt(0));
+        System.out.print(line.charAt(2));
+        System.out.print(line.charAt(4));
+        System.out.print(line.charAt(6));
+        System.out.print(line.charAt(8));
+    }
+}
+
+
+// paiza D
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+    for(int i = 1; i < 1001; i++)
+        System.out.println(i);
+    }
+}
+
+
+//
