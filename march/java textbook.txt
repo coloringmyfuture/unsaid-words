@@ -1,0 +1,150 @@
+// 練習 8-1
+
+// ファイル名　Cleric.java
+
+public class Cleric{
+}
+
+
+// 練習 8-2
+
+public class Cleric {
+	String name;
+	int hp = 50;
+	final int hpMax = 50;	// 定数はフィールドの名前は大文字が推奨される（解答：MAX_HP）
+	int mp = 10;
+	final int mpMax = 10;	// MAX_MP
+}
+
+
+// 練習 8-3
+
+public class Cleric {
+	String name;
+	int hp = 50;
+	final int MAX_HP = 50;
+	int mp = 10;
+	final int MAX_MP = 10;
+
+	public selfAid() {
+		this.mp -= 5;
+		this.hp = 50;
+	}
+}
+
+
+// 練習 8-3　解答
+
+public class Cleric {
+	String name;
+	int hp = 50;
+	final int MAX_HP = 50;
+	int mp = 10;
+	final int MAX_MP = 10;
+
+	public void selfAid() {
+		System.out.println(this.name + "はセルフエイドを唱えた！");
+		this.hp = this.MAX_HP;
+		this.mp -= 5;
+		System.out.println("HPが最大まで回復した");
+	}
+}
+
+
+// 練習 8-4　
+
+public class Cleric {
+	String name;
+	int hp = 50;
+	final int MAX_HP = 50;
+	int mp = 10;
+	final int MAX_MP = 10;
+	int r = new java.util.Random().nextInt(3);
+
+	public void selfAid() {
+		System.out.println(this.name + "はセルフエイドを唱えた！");
+		this.hp = this.MAX_HP;
+		this.mp -= 5;
+		System.out.println("HPが最大まで回復した");
+	}
+
+	public void pray(int seconds) {
+		System.out.println(this.name + "は祈った！");
+		this.mp += seconds + r;
+		if (this.mp <= MAX_MP) {
+			System.out.println("MPが" + this.mp + "まで回復した");
+		} else {
+			System.out.println("MPが最大まで回復した");
+		}
+	}
+}
+
+
+// 練習 8-4　解答
+
+import java.util.*;
+
+public class Cleric {
+	String name;
+	int hp = 50;
+	final int MAX_HP = 50;
+	int mp = 10;
+	final int MAX_MP = 10;
+
+	public void selfAid() {
+		System.out.println(this.name + "はセルフエイドを唱えた！");
+		this.hp = this.MAX_HP;
+		this.mp -= 5;
+		System.out.println("HPが最大まで回復した");
+	}
+
+	public int pray(int sec) {
+		System.out.println(this.name + "は" + sec + "秒間天に祈った！");
+
+		int recover = new Random().nextInt(3) + sec;
+		int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
+
+		this.mp += recoverActual;
+		System.out.println("MPが" + recoverActual + "回復した");
+		return recoverActual;
+	}
+}
+
+
+// 練習 9-1
+
+public class Thief {
+
+	String name;
+	int hp;
+	int mp;
+
+	public Thief(name, hp, mp) {
+		this.hp = 40;
+		this.mp = 5;
+	}
+ 
+}
+
+
+// 練習 9-1 解答
+
+public class Thief {
+	String name;
+	int hp;
+	int mp;
+
+	public Thief(String name, int hp, int mp) {
+		this.name = name;
+		this.hp = hp;
+		this.mp = mp;
+	}
+
+	public Thief(String name, int hp) {
+		this(name, hp, 5);
+	}
+
+	public Thief(String name) {
+		this(name, 40);
+	}
+}
