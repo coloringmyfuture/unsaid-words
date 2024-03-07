@@ -61,3 +61,34 @@ public class Main {
     }
 }
 
+
+// C117
+
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+
+    	// 出店店舗数、営業月数
+    	int shops = sc.nextInt();
+    	int months = sc.nextInt();
+    
+    	// 建設費用、1ヶ月分の人件費、ラーメン1杯の利益
+    	int builtCost = sc.nextInt();
+    	int humanCost = sc.nextInt();
+    	int ramenGain = sc.nextInt();
+    
+    	//　店舗数行分のラーメン販売数
+    	// 建設費用+(人件費*months)-(ラーメン利益*ramenSold)
+    	for(int i=0; i<shops; i++){
+    		int ramenSold = sc.nextInt();
+    		int totalGain = builtCost + (humanCost * months) - (ramenGain * ramenSold);
+    		if (totalGain >= 0) {
+    		    int shopsClose;
+    			shopsClose++;
+    			System.out.println(shopsClose);
+    		}
+    	}
+	}
+}
